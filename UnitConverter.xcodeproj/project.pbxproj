@@ -11,6 +11,11 @@
 		2F94678B28E684BF0044AD08 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F94678A28E684BF0044AD08 /* ContentView.swift */; };
 		2F94678D28E684C00044AD08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F94678C28E684C00044AD08 /* Assets.xcassets */; };
 		2F94679128E684C00044AD08 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F94679028E684C00044AD08 /* Preview Assets.xcassets */; };
+		2F94679C28E69D860044AD08 /* TemperatureService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F94679B28E69D860044AD08 /* TemperatureService.swift */; };
+		2F94679F28E69DCD0044AD08 /* TemperatureUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F94679E28E69DCD0044AD08 /* TemperatureUnit.swift */; };
+		2F9467A128E69DDC0044AD08 /* Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9467A028E69DDC0044AD08 /* Temperature.swift */; };
+		2F9467A328E69E960044AD08 /* TemperaturePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9467A228E69E960044AD08 /* TemperaturePickerView.swift */; };
+		2F9467A528E69F8B0044AD08 /* HeaderText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9467A428E69F8B0044AD08 /* HeaderText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,11 @@
 		2F94678C28E684C00044AD08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F94678E28E684C00044AD08 /* UnitConverter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UnitConverter.entitlements; sourceTree = "<group>"; };
 		2F94679028E684C00044AD08 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2F94679B28E69D860044AD08 /* TemperatureService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureService.swift; sourceTree = "<group>"; };
+		2F94679E28E69DCD0044AD08 /* TemperatureUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureUnit.swift; sourceTree = "<group>"; };
+		2F9467A028E69DDC0044AD08 /* Temperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temperature.swift; sourceTree = "<group>"; };
+		2F9467A228E69E960044AD08 /* TemperaturePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperaturePickerView.swift; sourceTree = "<group>"; };
+		2F9467A428E69F8B0044AD08 /* HeaderText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,10 +62,11 @@
 		2F94678728E684BF0044AD08 /* UnitConverter */ = {
 			isa = PBXGroup;
 			children = (
-				2F94678828E684BF0044AD08 /* UnitConverterApp.swift */,
-				2F94678A28E684BF0044AD08 /* ContentView.swift */,
-				2F94678C28E684C00044AD08 /* Assets.xcassets */,
-				2F94678E28E684C00044AD08 /* UnitConverter.entitlements */,
+				2F94679728E698D50044AD08 /* App */,
+				2F94679928E698F70044AD08 /* Extensions */,
+				2F94679D28E69DC00044AD08 /* Models */,
+				2F94679A28E69D770044AD08 /* Services */,
+				2F94679828E698F10044AD08 /* UI */,
 				2F94678F28E684C00044AD08 /* Preview Content */,
 			);
 			path = UnitConverter;
@@ -67,6 +78,50 @@
 				2F94679028E684C00044AD08 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2F94679728E698D50044AD08 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2F94678828E684BF0044AD08 /* UnitConverterApp.swift */,
+				2F94678C28E684C00044AD08 /* Assets.xcassets */,
+				2F94678E28E684C00044AD08 /* UnitConverter.entitlements */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2F94679828E698F10044AD08 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				2F94678A28E684BF0044AD08 /* ContentView.swift */,
+				2F9467A228E69E960044AD08 /* TemperaturePickerView.swift */,
+				2F9467A428E69F8B0044AD08 /* HeaderText.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		2F94679928E698F70044AD08 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2F94679A28E69D770044AD08 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2F94679B28E69D860044AD08 /* TemperatureService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2F94679D28E69DC00044AD08 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2F9467A028E69DDC0044AD08 /* Temperature.swift */,
+				2F94679E28E69DCD0044AD08 /* TemperatureUnit.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +195,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F94678B28E684BF0044AD08 /* ContentView.swift in Sources */,
+				2F9467A528E69F8B0044AD08 /* HeaderText.swift in Sources */,
+				2F94679C28E69D860044AD08 /* TemperatureService.swift in Sources */,
+				2F94679F28E69DCD0044AD08 /* TemperatureUnit.swift in Sources */,
+				2F9467A128E69DDC0044AD08 /* Temperature.swift in Sources */,
 				2F94678928E684BF0044AD08 /* UnitConverterApp.swift in Sources */,
+				2F9467A328E69E960044AD08 /* TemperaturePickerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,7 +321,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = UnitConverter/UnitConverter.entitlements;
+				CODE_SIGN_ENTITLEMENTS = UnitConverter/App/UnitConverter.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"UnitConverter/Preview Content\"";
@@ -299,7 +359,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = UnitConverter/UnitConverter.entitlements;
+				CODE_SIGN_ENTITLEMENTS = UnitConverter/App/UnitConverter.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"UnitConverter/Preview Content\"";
