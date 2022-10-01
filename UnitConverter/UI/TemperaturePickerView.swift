@@ -9,11 +9,11 @@ import SwiftUI
 
 struct TemperaturePickerView: View {
   
-  @Binding var selection: TemperatureUnit
+  @Binding var selection: UnitTemperature.Unit
   
   let text: String
   
-  init(_ text: String, selection: Binding<TemperatureUnit>) {
+  init(_ text: String, selection: Binding<UnitTemperature.Unit>) {
     self.text = text
     _selection = selection
   }
@@ -21,7 +21,7 @@ struct TemperaturePickerView: View {
   var body: some View {
     Section {
       Picker(text, selection: $selection) {
-        ForEach(TemperatureUnit.allCases) {
+        ForEach(UnitTemperature.Unit.allCases) {
           Text($0.rawValue)
         }
       }
@@ -34,11 +34,11 @@ struct TemperaturePickerView: View {
 }
 
 struct TemperaturePickerView_Previews: PreviewProvider {
-  @State private static var selectedUnit: TemperatureUnit = .fahrenheit
+  @State private static var selection: UnitTemperature.Unit = .fahrenheit
   
   static var previews: some View {
     Form {
-      TemperaturePickerView("Temperature", selection: $selectedUnit)
+      TemperaturePickerView("Temperature", selection: $selection)
     }
   }
 }

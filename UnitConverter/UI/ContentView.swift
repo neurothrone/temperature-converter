@@ -11,15 +11,17 @@ struct ContentView: View {
   @FocusState private var isAmountFocused: Bool
   
   @State private var amount: Double = .zero
-  @State private var fromUnit: TemperatureUnit = .celsius
-  @State private var toUnit: TemperatureUnit = .fahrenheit
-  
-  var result: Double {
-    TemperatureService.convert(
-      value: amount,
-      from: fromUnit,
-      to: toUnit
-    )
+  @State private var fromUnit: UnitTemperature.Unit = .celsius
+  @State private var toUnit: UnitTemperature.Unit = .fahrenheit
+    
+  var convertedResult: Double {
+    guard fromUnit != toUnit else { return amount }
+    
+    let sourceUnit = UnitTemperature.Unit.from(unit: fromUnit)
+    let targetUnit = UnitTemperature.Unit.from(unit: toUnit)
+    
+    let sourceTemp = Measurement(value: amount, unit: sourceUnit)
+    return sourceTemp.converted(to: targetUnit).value
   }
   
   var body: some View {
@@ -56,20 +58,11 @@ struct ContentView: View {
       TemperaturePickerView("Temperature to convert to", selection: $toUnit)
       
       Section {
-        ResultText(value: result)
-        Text(result, format: .number)
+        ResultTextView(value: convertedResult)
       } header: {
         HeaderText("Result (\(toUnit.symbol))")
       }
     }
-  }
-}
-
-struct ResultText: View {
-  let value: Double
-  
-  var body: some View {
-    Text(value, format: .number)
   }
 }
 

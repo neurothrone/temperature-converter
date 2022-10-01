@@ -16,6 +16,8 @@
 		2F9467A128E69DDC0044AD08 /* Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9467A028E69DDC0044AD08 /* Temperature.swift */; };
 		2F9467A328E69E960044AD08 /* TemperaturePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9467A228E69E960044AD08 /* TemperaturePickerView.swift */; };
 		2F9467A528E69F8B0044AD08 /* HeaderText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9467A428E69F8B0044AD08 /* HeaderText.swift */; };
+		2F94680928E899920044AD08 /* ResultTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F94680828E899920044AD08 /* ResultTextView.swift */; };
+		2F94680E28E89EC10044AD08 /* UnitTemperature+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F94680D28E89EC10044AD08 /* UnitTemperature+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		2F9467A028E69DDC0044AD08 /* Temperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temperature.swift; sourceTree = "<group>"; };
 		2F9467A228E69E960044AD08 /* TemperaturePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperaturePickerView.swift; sourceTree = "<group>"; };
 		2F9467A428E69F8B0044AD08 /* HeaderText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderText.swift; sourceTree = "<group>"; };
+		2F94680828E899920044AD08 /* ResultTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTextView.swift; sourceTree = "<group>"; };
+		2F94680D28E89EC10044AD08 /* UnitTemperature+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UnitTemperature+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,9 +67,8 @@
 			isa = PBXGroup;
 			children = (
 				2F94679728E698D50044AD08 /* App */,
-				2F94679928E698F70044AD08 /* Extensions */,
-				2F94679D28E69DC00044AD08 /* Models */,
-				2F94679A28E69D770044AD08 /* Services */,
+				2F94680A28E89E890044AD08 /* Old Solution */,
+				2F94679D28E69DC00044AD08 /* Extensions */,
 				2F94679828E698F10044AD08 /* UI */,
 				2F94678F28E684C00044AD08 /* Preview Content */,
 			);
@@ -96,32 +99,43 @@
 				2F94678A28E684BF0044AD08 /* ContentView.swift */,
 				2F9467A228E69E960044AD08 /* TemperaturePickerView.swift */,
 				2F9467A428E69F8B0044AD08 /* HeaderText.swift */,
+				2F94680828E899920044AD08 /* ResultTextView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
 		};
-		2F94679928E698F70044AD08 /* Extensions */ = {
+		2F94679D28E69DC00044AD08 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				2F94680D28E89EC10044AD08 /* UnitTemperature+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		2F94679A28E69D770044AD08 /* Services */ = {
+		2F94680A28E89E890044AD08 /* Old Solution */ = {
 			isa = PBXGroup;
 			children = (
-				2F94679B28E69D860044AD08 /* TemperatureService.swift */,
+				2F94680B28E89E940044AD08 /* Models */,
+				2F94680C28E89E9E0044AD08 /* Services */,
 			);
-			path = Services;
+			path = "Old Solution";
 			sourceTree = "<group>";
 		};
-		2F94679D28E69DC00044AD08 /* Models */ = {
+		2F94680B28E89E940044AD08 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				2F9467A028E69DDC0044AD08 /* Temperature.swift */,
 				2F94679E28E69DCD0044AD08 /* TemperatureUnit.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		2F94680C28E89E9E0044AD08 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2F94679B28E69D860044AD08 /* TemperatureService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,7 +210,9 @@
 			files = (
 				2F94678B28E684BF0044AD08 /* ContentView.swift in Sources */,
 				2F9467A528E69F8B0044AD08 /* HeaderText.swift in Sources */,
+				2F94680928E899920044AD08 /* ResultTextView.swift in Sources */,
 				2F94679C28E69D860044AD08 /* TemperatureService.swift in Sources */,
+				2F94680E28E89EC10044AD08 /* UnitTemperature+Extensions.swift in Sources */,
 				2F94679F28E69DCD0044AD08 /* TemperatureUnit.swift in Sources */,
 				2F9467A128E69DDC0044AD08 /* Temperature.swift in Sources */,
 				2F94678928E684BF0044AD08 /* UnitConverterApp.swift in Sources */,
