@@ -18,6 +18,8 @@
 		2F9467A528E69F8B0044AD08 /* HeaderText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9467A428E69F8B0044AD08 /* HeaderText.swift */; };
 		2F94680928E899920044AD08 /* ResultTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F94680828E899920044AD08 /* ResultTextView.swift */; };
 		2F94680E28E89EC10044AD08 /* UnitTemperature+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F94680D28E89EC10044AD08 /* UnitTemperature+Extensions.swift */; };
+		2F94683928E941540044AD08 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2F94683728E941540044AD08 /* README.md */; };
+		2F94683A28E941540044AD08 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 2F94683828E941540044AD08 /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		2F9467A428E69F8B0044AD08 /* HeaderText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderText.swift; sourceTree = "<group>"; };
 		2F94680828E899920044AD08 /* ResultTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTextView.swift; sourceTree = "<group>"; };
 		2F94680D28E89EC10044AD08 /* UnitTemperature+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UnitTemperature+Extensions.swift"; sourceTree = "<group>"; };
+		2F94683728E941540044AD08 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2F94683828E941540044AD08 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +54,8 @@
 		2F94677C28E684BF0044AD08 = {
 			isa = PBXGroup;
 			children = (
+				2F94683828E941540044AD08 /* LICENSE */,
+				2F94683728E941540044AD08 /* README.md */,
 				2F94678728E684BF0044AD08 /* TemperatureConverter */,
 				2F94678628E684BF0044AD08 /* Products */,
 			);
@@ -196,7 +202,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F94683928E941540044AD08 /* README.md in Resources */,
 				2F94679128E684C00044AD08 /* Preview Assets.xcassets in Resources */,
+				2F94683A28E941540044AD08 /* LICENSE in Resources */,
 				2F94678D28E684C00044AD08 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
